@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" type="text/css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap" rel="stylesheet">
+        <title>Lee Drake's Portfolio Page</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about-me" alt="homepage">HOME</a></li>
+                    <li><a href="#projects" alt="my projects">PROJECTS</a></li>
+                    <li><a href="#skills" alt="my skills">SKILLS</a></li>
+                    <li><a href="contact.html" alt="contact me">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about-me">
+                <div class="profile">
+                    <h1>Lee Drake</h1>
+                    <img class="profilepic" src="images/profilepic.jpg" alt="Photo of Lee Drake">
+                    <h3>Junior Full Stack Web Developer</h3>
+                </div>
+                <div class="about">
+                    <h2>About Me</h2>
+                    <p>Hello! My name is Lee Drake, and im a Basingstoke based Full Stack Web Developer in training.</p>
+                    <p>Previously I worked in Customer Services. However I didnt have the passion for it and felt it was time to make a Career Switch to something I enjoy!</p>
+                    <p>Im currently half way through my training and right now my programing skills include: HTML, CSS and Javascript. But will continue on to learning the back end of web development using Python.</p>
+                    <p>Please feel free to take a look at some of the projects i've been working on!</p>
+                </div>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <details>
+                    <summary>Number Guessing Game - This is a small guess the Number Game using Javascript.</summary>
+                    <div class="numberGuessingGame">
+                        <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+                        <div class="form">
+                            <label for="guessField">Enter a guess: </label>
+                            <input type="text" id="guessField" class="guessField"><br><br>
+                            <input type="submit" value="Submit guess" class="guessSubmit">
+                        </div>
+                        <div class="resultParas">
+                            <p class="guesses"></p>
+                            <p class="lastResult"></p>
+                            <p class="lowOrHi"></p>
+                        </div>
+                        <div id="reset"></div>
+                    </div>
+                </details>
+                <script src="script.js"></script>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <img class="skill-icon" src="images/html-css-js.png">
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

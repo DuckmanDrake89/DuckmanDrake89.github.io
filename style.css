@@ -1,0 +1,198 @@
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0 10%;
+    font-size: 20px;
+    font-family: 'Rajdhani';
+    color: white;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    background-color: rgb(0,0,0,0.5);
+    text-align: center;
+}
+
+nav ul {
+    margin-top: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* main */
+
+h1 {
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    margin: 0;
+    font-weight: 100;
+}
+
+h2 {
+    background-color: rgb(255,255,255,0.5);
+    color: black;
+    padding: 10px;
+    margin: 0;
+}
+
+h3 {
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+    padding: 0 10px;
+    margin: 0;
+    text-align: center;
+}
+
+/* About Me */
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 400px;
+}
+
+.about {
+    max-width: 700px;
+    background-color: rgb(0,0,0,0.5);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Projects */
+
+#projects {
+    margin-bottom: 20px;
+}
+
+summary {
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+    padding: 5px 10px;
+    margin: 0;
+    border-bottom: 2px solid white; 
+    
+}
+
+.numberGuessingGame {
+    background-color: rgb(0,0,0,0.5);
+    padding: 20px;
+}
+
+button, .guessSubmit {
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Skills */
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+#skills h2 {
+    width: 100%;
+}
+
+.skill-icon {
+    width: 200px;
+}
+
+/* Contact Me */
+
+#contact-me {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    justify-content: space-between;
+}
+
+.contactTypes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.contactImage {
+    width: 75px;
+}
+
+.contact-me h1 {
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin: 0;
+    }
+
+    #about-me {
+        width: 100%;
+        margin: 0;
+    }
+
+    .about p {
+        padding: 10px;
+    }
+
+    .profile {
+        margin-bottom: 20px;
+    } 
+    
+    .profile img {
+        width: 100%;
+    }
+
+    .about {
+        padding: 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
